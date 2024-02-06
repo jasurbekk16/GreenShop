@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif, "Cera Pro", "Cera Pro Light", "Cera Pro Bold";
+
+}
+/* font import start */
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./assets/CeraPro//CeraProMedium.otf'); 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cera Pro Light';
+    src: url('./assets/CeraPro/CeraProLight.otf'); 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cera Pro Bold';
+    src: url('./assets/CeraPro/CeraProBold.otf'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* font import end */
+
+body{
+    display: flex;
+    justify-content: center;
+}
+button, a{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+button:hover{
+    transform: scale(1.1);
+}
+button:active{
+    transform: scale(0.9);
+}
+.mainWrapper{
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 0 120px;
+}
+/* navbar start */
+nav{
+    width: 100%;
+    display: flex;
+    background-color: #FFFFFF;
+    align-items: center;
+    justify-content: space-between;
+    height: 78px;
+    border-bottom: 0.3px solid rgba(70, 163, 88, 0.5);
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    height: 100%;
+}
+.logo > img{
+    cursor: pointer;
+}
+.links > a{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Cera Pro Light";
+    color: #3D3D3D;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.links > a:focus{
+    font-family: "Cera Pro Bold";
+    border-bottom: 3px solid #46A358;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.icons > a{
+    background-color: transparent;
+    font-size: 20px;
+    color: #3D3D3D;
+}
+.icons > button{
+    width: 100px;
+    height: 35px;border-radius: 6px;
+    background-color: #46A358;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    color: #FFFFFF;
+}
+/* navbar end */
+
+/* home page start */
+
+/* section1 start */
+.section1{
+    width: 100%;
+    height: 450px;
+    background-color: rgba(245, 245, 245, 0.5);
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 68px 43px;
+}
+.kichikRasm, .kattaRasm{
+    position: absolute;
+}
+.kattaRasm{
+top: 42px;
+right: 109px;
+}
+.kichikRasm{
+    top: 388px;
+    right: 437px;
+}
+.section1 > p{
+font-size: 14px;
+font-weight: 500px;
+font-family: Cera Pro;
+letter-spacing: 2px;
+}
+.section1 > b{
+    font-size: 70px;
+    font-weight: 900;
+    font-family: Cera Pro Bold;
+    line-height: 70px;
+    width: 550px;
+    margin-top: 7px;
+    margin-bottom: 5px;
+    color: #3D3D3D;
+}
+.section1 > b > s{
+    color: #46A358;
+}
+.section1 > span{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Cera Pro Light;
+    color: #727272;
+    line-height: 24px;
+    width: 557px;
+
+}
+.section1 > button{
+    width: 140px;
+    height: 40px;
+    background-color: #46A358;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-family: Cera Pro;
+    margin-top: 44px;
+}
+/* section1 end */
+
+/* section 2 start */
+
+.section2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 46px;
+}
+.homeNav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 23px;
+}
+.linksHome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 37px;
+}
+.linksHome > a{
+    color: #3D3D3D;
+    font-family: Cera Pro;
+    font-size: 15px;
+    transition: 0.5s;
+}
+.linksHome > a:focus{
+    color: #46A358;
+    font-family: Cera Pro Bold;
+}
+.selectHome{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.selectHome > p{
+    font-size: 18px;
+    font-family: Cera Pro Light;
+}
+.selectHome > select{
+    border-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-family: Cera Pro Light;
+}
+
+.allPlantsDiv{
+    margin-top: 31px;
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 840px;
+    background-color: red;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.allPlantsCard{
+display: flex;
+flex-direction: column;
+    align-items: start;
+
+}
+.imgDiv{
+    width: 258px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    align-items: center;
+    background-color: #FFF;
+
+}
+.iconsDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+.iconsDiv > button{
+    width: 35px;
+    height: 35px;
+    border: 4px;
+    background-color: #fff;
+    font-size: 20px;
+
+}
+.iconsDiv > button:focus{
+    color: #46A358;
+}
+/* section 2 end */
+/* home page end */
